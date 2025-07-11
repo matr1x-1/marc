@@ -95,13 +95,13 @@ To do inference with TTT, you run `predict.py`
 
 ```shell
 # Specify data path
-data_file=/kaggle/input/arc-prize-2024/arc-agi_evaluation_challenges.json
+data_file=/home/ubuntu/data/arc-prize-2025/arc-agi_evaluation_challenges.json
 # Tell where your Fintuned (named as base) and TTT checkpoints are
-base_checkpoint_dir=/path/to/finetuned/model/folder/
-ttt_folder=/path/to/ttt/folder
+base_checkpoint_dir=/home/ubuntu/finetuned/model/folder/
+ttt_folder=/home/ubuntu/ttt_folder
 
 # if solution file is given predict will evaluate the model
-solution_file=/kaggle/input/arc-prize-2024/arc-agi_evaluation_solutions.json
+solution_file=/home/ubuntu/data/arc-prize-2025/arc-agi_evaluation_solutions.json
 
 
 temperature=0
@@ -110,7 +110,7 @@ n_sample=1
 # this should be same as your ttt
 max_lora_rank=128
 # You need to tell where predictions and submissions should be saved
-tti_folder=/path/to/tti/folder
+tti_folder=/home/ubuntu/ttt_folder/results
 mkdir -p $tti_folder
 
 
