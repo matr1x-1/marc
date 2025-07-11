@@ -34,7 +34,7 @@ tokenizer:
 
 checkpointer:
   _component_: torchtune.training.FullModelHFCheckpointer
-  checkpoint_dir: /raid/lingo/akyurek/git/arc/weights/hf_model_last/
+  checkpoint_dir: /home/ubuntu/git/arc/weights/hf_model_last
   checkpoint_files: [
      pytorch_model-0001-of-0004.bin,
      pytorch_model-0002-of-0004.bin,
