@@ -42,7 +42,7 @@ checkpointer:
      pytorch_model-0004-of-0004.bin,
   ]
   recipe_checkpoint: # recipe_state.pt
-  output_dir: /raid/lingo/akyurek/git/arc/experiments/lora/model_weights/
+  output_dir: /home/ubuntu/git/arc/experiments/lora/model_weights/
   model_type: LLAMA3
 
 resume_from_checkpoint: False
@@ -80,7 +80,7 @@ gradient_accumulation_steps: 16
 compile: False
 
 # Logging
-output_dir: /raid/lingo/akyurek/git/arc/experiments/lora
+output_dir: /home/ubuntu/git/arc/experiments/lora
 metric_logger:
   _component_: torchtune.training.metric_logging.DiskLogger
   log_dir: ${output_dir}
